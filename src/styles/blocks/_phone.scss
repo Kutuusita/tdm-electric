@@ -1,0 +1,23 @@
+
+.phone {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    transition: opacity .4s;
+
+    svg {
+        margin-right: 10px;
+        transition: transform .4s;
+    }
+
+    &:hover {
+        color: inherit; 
+        opacity: .9;
+        svg {
+            margin-right: 10px;
+            transform: scale(1.1);
+        }
+    }
+}

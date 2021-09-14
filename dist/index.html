@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TDM ELECTRIC</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <header class="header d-none d-lg-block">
+        <div class="header-top">
+            <div class="container">
+                <div class="row justify-content-between align-items-center">
+                    <div class="col">
+                        <button class="location-btn">
+                            <svg width="14" height="18">       
+                                <use xlink:href="images/icons/location.svg#location-i" width="14" height="18"/>    
+                            </svg>
+                            Выберите город
+                        </button>
+                    </div>
+                    <div class="col d-flex justify-content-end">
+                        <div class="login-links">
+                            <svg width="16" height="18">       
+                                <use xlink:href="images/icons/login.svg#login-i" width="16" height="18"/>    
+                            </svg>
+                            <a href="#" class="login-links__item">Вход в личный кабинет</a>
+                            <span class="login-links__separator"> / </span>
+                            <a href="#" class="login-links__item">Регистрация</a>
+                        </div>
+                        <div class="lang header__lang">
+                            <button class="lang-btn lang-btn--rus">rus</button>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+        </div>
+        <div class="header-middle">
+            <div class="container">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="logo header__logo">
+                        <img src="./images/logo.svg" alt="TDM ELECTRIC">
+                    </div>
+                    <div class="search header__search">
+                        <form action="/" class="search-form">
+                            <input type="search" name="search" id="search" class="search-form__input" placeholder="Поиск">
+                            <button class="search-form__btn" title="Поиск">
+                                <svg width="20" height="20">       
+                                    <use xlink:href="images/icons/search.svg#search-i" width="20" height="20"/>    
+                                </svg>
+                            </button>
+                        </form>
+                    </div>
+                    <div class="header__phone">
+                        <a href="tel:+74957273214" rel="nofollow" class="phone">
+                            <svg width="19" height="18">       
+                                <use xlink:href="images/icons/phone.svg#phone-i" width="19" height="18"/>    
+                            </svg>
+                            +7 (495) 727-32-14
+                        </a>
+                    </div>
+                    <div class="header__button">
+                        <a class="button button--download" href="documents/file.txt" download>Скачать электронную заявку</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-bottom">
+            <div class="container">
+                <div class="navbar d-flex justify-content-between align-items-center">
+                    <div class="header__button">
+                        <a class="button button--link" href="#" >Где купить</a>
+                    </div>
+                    <nav class="navigation navbar" role="navigation">
+                        <ul class="navigation__list navbar-nav flex-row">
+                            <li class="nav-item"><a href="#" class="navigation__link">О компании</a></li>
+                            <li class="nav-item"><a href="#" class="navigation__link">Новости</a></li>
+                            <li class="nav-item"><a href="#" class="navigation__link">Продукция</a></li>
+                            <li class="nav-item"><a href="#" class="navigation__link">Поддержка</a></li>
+                            <li class="nav-item"><a href="#" class="navigation__link">Обучение</a></li>
+                            <li class="nav-item"><a href="#" class="navigation__link">Проекты</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- /.header -->
+
+    
+    <section class="section main-sliders">
+        <div class="container">
+            <div class="main-carousel slider__wrap d-flex align-items-end align-items-lg-center">
+                <div class="slider slider--hidden sliderWholesale" data-index="0">
+                    <div class="slider__title">
+                        Оптовый покупатель
+                    </div>
+                    
+                    <div id="sliderWholesale" class="carousel slide slider__slider" data-bs-ride="carousel">
+                        <div class="carousel-indicators slider__indicators">
+                            <button type="button" data-bs-target="#sliderWholesale" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#sliderWholesale" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        </div>
+                        <div class="carousel-inner slider__inner">
+                            <div class="carousel-item active">
+                            <img src="images/slide-1.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                            <img src="images/slide-1.jpg" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#sliderWholesale"  data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Предыдущий</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#sliderWholesale"  data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Следующий</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="slider slider--active sliderPrivate" data-index="1">
+                    <div class="slider__title">
+                        Частный покупатель
+                    </div>
+                    <div id="sliderPrivate" class="carousel slide slider__slider" data-bs-ride="carousel">
+                        <div class="carousel-indicators slider__indicators">
+                            <button type="button" data-bs-target="#sliderPrivate" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#sliderPrivate" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#sliderPrivate" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner slider__inner">
+                            <div class="carousel-item active">
+                                <img src="images/slide-1.jpg" class="d-block w-100" alt="...">
+                                <a href="#" class="slider__link">Подробнее</a>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/slide-1.jpg" class="d-block w-100" alt="...">
+                                <a href="#" class="slider__link">Подробнее</a>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/slide-1.jpg" class="d-block w-100" alt="...">
+                                <a href="#" class="slider__link">Подробнее</a>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#sliderPrivate"  data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Предыдущий</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#sliderPrivate"  data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Следующий</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="slider slider--hidden sliderProfessional" data-index="2">
+                    <div class="slider__title">
+                        Профессиональный покупатель
+                    </div>
+    
+                    <div id="sliderProfessional" class="carousel slide slider__slider" data-bs-ride="carousel">
+                        <div class="carousel-indicators slider__indicators">
+                            <button type="button" data-bs-target="#sliderProfessional" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#sliderProfessional" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#sliderProfessional" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#sliderProfessional" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                        </div>
+                        <div class="carousel-inner slider__inner">
+                            <div class="carousel-item active">
+                            <img src="images/slide-1.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                            <img src="images/slide-1.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                            <img src="images/slide-1.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                            <img src="images/slide-1.jpg" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#sliderProfessional"  data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Предыдущий</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#sliderProfessional"  data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Следующий</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /.main-sliders -->
+
+    
+    <section class="section about-company">
+        <div class="container">
+            <div class="d-flex align-items-center">
+                <div class="about-company__video">
+                    <button class="video-link" data-bs-target="#aboutVideo" data-bs-toggle="modal">
+                        <span class="logo video-link__logo">
+                            <img src="./images/logo--white.svg" alt="TDM ELECTRIC">
+                        </span>
+                        <span class="video-link__btn d-flex align-items-center">
+                            <svg>       
+                                <use xlink:href="images/icons/play.svg#play-i"/>    
+                            </svg>
+                            <span>
+                                Смотреть <br>
+                                видео
+                            </span>
+                        </span>
+                    </button>
+                </div>
+                <div class="about-company__info">
+                    <h1 class="about-company__title">TDM ELECTRIC ведущий производитель <br>
+                        электротехнической продукции</h1>
+                    <p class="about-company__description">Компания <strong>TDM ЕLECTRIC</strong> производит и поставляет под собственной торговой маркой <br>
+                        светотехнику, источники света, низковольтную аппаратуру, электромонтажные изделия, <br>
+                        корпуса электрощитов, электроустановочные изделия, удлинитель</p>
+                    <a href="#" class="link link--more">Подробнее</a>
+                </div>
+            </div>
+        </div>
+    
+    </section>
+    <div class="modal fade" tabindex="-1"  id="aboutVideo" role="dialog" >
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">X</button>
+              <iframe width="100%" height="400" src="https://www.youtube.com/embed/YBqnHnInA9Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+    </div>
+    <!-- /.about-company -->
+
+    
+    <section class="section news">
+        <div class="container">
+            <div class="news__header section__header d-flex justify-content-between align-items-center">
+                <h2 class="section__title">Новости</h2>
+                <a href="#" class="news__more">
+                    Все новости
+                    <svg>       
+                        <use xlink:href="images/icons/arrow.svg#arrow-i"/>    
+                    </svg>
+                </a>
+            </div>
+            <div class="news-list d-sm-flex">
+                <div class="news-col">
+                    <div class="news-item">
+                        <a href="#" class="news-item__link">
+                            <span class="news-item__date">
+                                18 августа 2021
+                            </span>
+                            <span class="news-item__excerpt">
+                                TDM ELECTRIC приглашает на выставку «Интерсвет 2021»... 
+                            </span>
+                        </a>
+                    </div>
+                    <div class="news-item">
+                        <a href="#" class="news-item__link">
+                            <span class="news-item__date">
+                                17 августа 2021
+                            </span>
+                            <span class="news-item__excerpt">
+                                Расширение ассортимента и поступление на склад светильников серии НСП 03-60 с рассеивателем «Кольца»...
+                            </span>
+                        </a>
+                    </div>
+                    <div class="news-item">
+                        <a href="#" class="news-item__link">
+                            <span class="news-item__date">
+                                16 августа 2021
+                            </span>
+                            <span class="news-item__excerpt">
+                                Изменение кратности отгрузки на отдельные группы продукции торговой марки TDM ELECTRIC с 16 августа 2021... 
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="news-col">
+    
+                    <div class="news-item">
+                        <a href="#" class="news-item__link">
+                            <span class="news-item__date">
+                                16 августа 2021
+                            </span>
+                            <span class="news-item__excerpt">
+                                Расширение ассортимента и поступление на склад светодиодных прожекторов СДО-04 с встроенным фотореле серии Народная...
+                            </span>
+                        </a>
+                    </div>
+                    <div class="news-item">
+                        <a href="#" class="news-item__link">
+                            <span class="news-item__date">
+                                15 августа 2021
+                            </span>
+                            <span class="news-item__excerpt">
+                                Акция МЫ ВМЕСТЕ МЫ ЛУЧШИЕ - XVIII... 
+                            </span>
+                        </a>
+                    </div>
+                    <div class="news-item">
+                        <a href="#" class="news-item__link">
+                            <span class="news-item__date">
+                                12 августа 2021
+                            </span>
+                            <span class="news-item__excerpt">
+                                Расширение ассортимента и поступление на склад труб гофрированных ПНД черных в бухтах по 25 метров... 
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /.news -->
+
+
+    <section class="section industries">
+        <div class="container">
+            <div class="industries__header section__header">
+                <h2 class="section__title">Отрасли присутствия</h2>
+            </div>
+            <div class="industries-list d-flex justify-content-between flex-wrap flex-sm-nowrap">
+                <div class="industries-card">
+                    <img class="industries-card__img" src="images/industries-1.jpg" alt="Промышленные предприятия">
+                    <a href="#" class="industries-card__title">Промышленные<br>
+                        предприятия</a>
+                </div>
+                <div class="industries-card">
+                    <img class="industries-card__img" src="images/industries-2.jpg" alt="Сборщики щитового оборудования">
+                    <a href="#" class="industries-card__title">Сборщики щитового<br>
+                        оборудования</a>
+                </div>
+                <div class="industries-card">
+                    <img class="industries-card__img" src="images/industries-3.jpg" alt="Строительно-монтажные организации">
+                    <a href="#" class="industries-card__title">Строительно-монтажные<br>
+                        организации</a>
+                </div>
+                <div class="industries-card">
+                    <img class="industries-card__img" src="images/industries-4.jpg" alt="Розничные магазины">
+                    <a href="#" class="industries-card__title">Розничные <br>
+                        магазины</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /.industries -->
+
+
+
+    <script src="js/index.js"></script>
+
+    
+</body>
+</html>

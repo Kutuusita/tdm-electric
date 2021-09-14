@@ -1,0 +1,38 @@
+.news-item {
+    &__link {
+        display: block;
+        text-decoration: none;
+        margin-bottom: 20px;
+    }
+
+    &__date {
+        display: block;
+        color: #fc7d00;
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+
+    &__excerpt {
+        font-size: 13px;
+    }
+}
+
+@media (min-width: 768px) {
+    .news-item {
+        &__link {
+            height: 78px;
+            margin-bottom: 5px;
+        }
+    }
+}
+@media (min-width: 1200px) {
+    .news-item {
+        &__date {
+            font-size: 18px;
+        }
+
+        &__excerpt {
+            font-size: 17px;
+        }
+    }
+}

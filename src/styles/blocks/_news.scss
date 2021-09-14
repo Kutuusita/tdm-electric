@@ -1,0 +1,50 @@
+
+// News section
+.news {
+
+    &__more {
+        font-size: 12px;
+        font-weight: 300;
+        text-decoration: none;
+
+        &:hover {
+            svg {
+                stroke: #0a58ca;
+            }
+        }
+
+        svg {
+            width: 4px;
+            height: 8px;
+            stroke: #4d4d4d;
+            transition: all .2s;
+        }
+    }
+}
+
+.news-col {
+    flex: 0 0 48%;
+}
+
+@media (min-width: 768px) {
+    .news {
+        &__more {
+            font-size: 20px;
+            svg {
+                width: 7px;
+                height: 14px;
+            }
+        }
+    }
+}
+@media (min-width: 992px) {
+    .news {
+        &__more {
+            font-size: 24px;
+            svg {
+                width: 8px;
+                height: 16px;
+            }
+        }
+    }
+}

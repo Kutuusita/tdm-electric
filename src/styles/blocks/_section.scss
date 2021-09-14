@@ -1,0 +1,20 @@
+// Sections
+.section {
+    margin-bottom: 40px;
+    color: #4d4d4d;
+    &__title {
+        text-transform: uppercase;
+        font-size: 16px;
+        font-weight: bold;
+        margin-bottom: 8px;
+    }
+}
+
+@media (min-width: 992px) {
+    .section {
+        &__title {
+            font-size: 27px;
+            margin-bottom: 25px;
+        }
+    }
+}

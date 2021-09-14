@@ -1,0 +1,90 @@
+// Buttons
+.button {
+    background: linear-gradient(180deg, #c9c9c9 0%, #636365 100%);
+    box-shadow: 0px 5px 7px rgba(0, 0, 0, 0.25), inset 0px 4px 13px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    display: inline-flex;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: none;
+    line-height: 1;
+    padding: 9px 38px 11px 37px;
+    transition: transform .4s ease;
+
+    &:hover {
+        color: #ffffff;
+        transform: scale(1.02);
+    }
+
+    &.active {
+        background: linear-gradient(179deg,#636365 0,#636365 100%);
+    }
+    
+    &--link {
+        font-size: 21px;
+        min-width: 237px;
+        padding: 7px 68px 8px 64px;
+    }
+    
+    &--download {
+        font-size: 17px;
+        min-width: 317px;
+    }
+}
+
+.location-btn {
+    border: none;
+    background: none;
+    font-size: 15px;
+    color: inherit;
+    display: flex;
+    align-items: center;        
+    transition: opacity .2s;
+    &:hover {
+        opacity: .8;
+    }
+
+    svg {
+        margin-right: 10px;
+        transition: transform .2s ease-in;
+    }
+
+    &:hover svg {
+        transform: translate(0, -2px);
+    }
+}
+
+.lang-btn {
+    font-size: 11px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    height: 21px;
+    width: 32px;
+    background: none;
+    padding: 0;
+    transition: opacity .4s;
+
+    &:hover {
+        opacity: .8;
+    }
+}
+
+.btn-close {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    background-color: #fff;
+    border: none;
+    border-radius: 100%;
+    opacity: .6;
+    transition: opacity .4s;
+    &:hover {
+        opacity: 1;
+    }
+}

@@ -1,0 +1,24 @@
+
+// Navigation
+.navigation {
+    &__list {
+        background: linear-gradient(180deg, #FC7D00 -3.75%, #F76310 100%);
+        box-shadow: 7px 7px 15px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+        padding: 0 7px;
+    }
+    &__link {
+        text-decoration: none;
+        color: #ffffff;
+        font-weight: bold;
+        font-size: 21px;
+        padding: 6px 36px 9px;
+        display: block;
+        transition: opacity .2s;
+
+        &:hover {
+            opacity: .9;
+            color: #fff;
+        }
+    }
+}

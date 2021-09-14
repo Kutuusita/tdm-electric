@@ -1,0 +1,29 @@
+
+// Header
+
+
+.header {
+    color: #4d4d4d;
+    margin-bottom: 24px;
+    &__button {
+        text-align-last: right;
+    }
+
+    &__logo {
+        width: 250px;
+        display: block;
+    }
+
+    &__lang {
+        margin-left: 31px;
+    }
+}
+
+.header-top {
+    background-color: #D9D7D7;
+    padding: 6px 0; 
+}
+
+.header-middle {
+    padding: 15px 0px 2px;
+}

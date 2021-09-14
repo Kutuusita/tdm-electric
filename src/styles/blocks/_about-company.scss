@@ -1,0 +1,57 @@
+// About Us section
+.about-company {
+    color: #636365;
+
+    &__video {
+        margin-right: 12px;
+    }
+
+    &__title {
+        font-size: 12px;
+        font-weight: bold;
+    }
+
+    &__description {
+        display: none;
+        font-weight: 100;
+    }
+}
+
+@media (min-width: 768px) {
+    .about-company {
+        &__video {
+            margin-right: 26px;
+        }
+
+        &__title {
+            font-size: 20px;
+        }
+
+        &__description {
+            display: block;
+            font-size: 13px;
+        }
+    }
+}
+@media (min-width: 992px) {
+    .about-company {
+        &__video {
+            margin-right: 35px;
+        }
+    
+        &__title {
+            font-size: 30px;
+        }
+
+        &__description {
+            font-size: 19px;
+        }
+    }
+}
+@media (min-width: 1400px) {
+     .about-company {
+        &__video {
+            margin-right: 43px;
+        }
+    }
+}

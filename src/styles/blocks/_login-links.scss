@@ -1,0 +1,23 @@
+
+.login-links {
+    display: flex;
+    align-items: center;
+
+    &__item {
+        font-size: 15px;
+        text-decoration: none;
+        transition: opacity .2s;
+        &:hover {
+            opacity: .8;
+            color: inherit;
+        }
+    }
+
+    svg {
+        margin-right: 10px;
+    }
+
+    .login-links__separator {
+        margin: 0 5px;
+    }
+}

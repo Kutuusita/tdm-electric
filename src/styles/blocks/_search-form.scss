@@ -1,0 +1,33 @@
+// Searchform
+.search-form {
+    position: relative;
+    &__input {
+        border-radius: 10px;
+        border: 2px solid rgba(0, 0, 0, 0.2);
+        font-size: 18px;
+        height: 40px;
+        padding-left: 44px;
+        transition: border-color .2s;
+        &:hover,
+        &:focus {
+            border-color: #cdcdcd;
+            outline: none;
+        }
+    }
+    &__btn {
+        font-size: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        border: none;
+        border-radius: 10px 0 0 10px;
+        background: none;
+        height: 40px;
+        width: 40px;
+        transition: background-color .2s;
+        &:hover,
+        &:focus {
+            background-color: #D9D7D7;
+        }
+    }
+}
